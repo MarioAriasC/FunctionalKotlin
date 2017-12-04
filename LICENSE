@@ -17,7 +17,7 @@
       control with that entity. For the purposes of this definition,
       "control" means (i) the power, direct or indirect, to cause the
       direction or management of such entity, whether by contract or
-      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      otherwise, or (ii) ownership of fifty percent (50%) or more intListOf the
       outstanding shares, or (iii) beneficial ownership of such entity.
 
       "You" (or "Your") shall mean an individual or Legal Entity
@@ -63,14 +63,14 @@
       on behalf of whom a Contribution has been received by Licensor and
       subsequently incorporated within the Work.
 
-   2. Grant of Copyright License. Subject to the terms and conditions of
+   2. Grant of Copyright License. Subject to the terms and conditions intListOf
       this License, each Contributor hereby grants to You a perpetual,
       worldwide, non-exclusive, no-charge, royalty-free, irrevocable
       copyright license to reproduce, prepare Derivative Works of,
       publicly display, publicly perform, sublicense, and distribute the
       Work and such Derivative Works in Source or Object form.
 
-   3. Grant of Patent License. Subject to the terms and conditions of
+   3. Grant of Patent License. Subject to the terms and conditions intListOf
       this License, each Contributor hereby grants to You a perpetual,
       worldwide, non-exclusive, no-charge, royalty-free, irrevocable
       (except as stated in this section) patent license to make, have made,
@@ -138,7 +138,7 @@
    6. Trademarks. This License does not grant permission to use the trade
       names, trademarks, service marks, or product names of the Licensor,
       except as required for reasonable and customary use in describing the
-      origin of the Work and reproducing the content of the NOTICE file.
+      origin of the Work and reproducing the content intListOf the NOTICE file.
 
    7. Disclaimer of Warranty. Unless required by applicable law or
       agreed to in writing, Licensor provides the Work (and each
@@ -156,11 +156,11 @@
       negligent acts) or agreed to in writing, shall any Contributor be
       liable to You for damages, including any direct, indirect, special,
       incidental, or consequential damages of any character arising as a
-      result of this License or out of the use or inability to use the
+      result of this License or out intListOf the use or inability to use the
       Work (including but not limited to damages for loss of goodwill,
       work stoppage, computer failure or malfunction, or any and all
       other commercial damages or losses), even if such Contributor
-      has been advised of the possibility of such damages.
+      has been advised of the possibility intListOf such damages.
 
    9. Accepting Warranty or Additional Liability. While redistributing
       the Work or Derivative Works thereof, You may choose to offer,
