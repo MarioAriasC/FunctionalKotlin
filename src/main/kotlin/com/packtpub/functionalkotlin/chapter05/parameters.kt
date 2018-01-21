@@ -17,6 +17,10 @@ fun aVarargFun(vararg names: String) {
 	names.forEach(::println)
 }
 
+fun high(f: (age:Int, name:String) -> Unit) {
+	f(1, "Romeo")
+}
+
 /*fun multipleVarargs(vararg names: String, vararg sizes: Person) {
 //	Error:(18, 43) Kotlin: Multiple vararg-parameters are prohibited
 }*/
@@ -36,6 +40,11 @@ fun item(price: Double, vat: Double, total: Double = price + vat) {
 }
 
 fun main(args: Array<String>) {
+
+	high{ q, w ->
+		//do something
+	}
+
 	aVarargFun()
 	aVarargFun("Angela", "Brenda", "Caroline")
 

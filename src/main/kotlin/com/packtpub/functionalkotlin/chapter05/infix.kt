@@ -22,6 +22,13 @@ object Belong
 
 object Us
 
+infix fun String.`(╯°□°）╯︵ ┻━┻`(s: String) = "*$this flips table at $s*"
+
 fun main(args: Array<String>) {
+
+	/*1 superOperation 2
+	1.superOperation(2)
+
+	"Adam" `(╯°□°）╯︵ ┻━┻` "Ben"*/
 	All your (Base are Belong to Us)
 }
