@@ -1,5 +1,9 @@
 package com.packtpub.functionalkotlin.chapter07
 
+import kotlinx.coroutines.experimental.delay
+import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.experimental.runBlocking
+
 /*
 fun main(args: Array<String>) {
 	launch {
@@ -22,8 +26,7 @@ fun main(args: Array<String>) {
 	}
 }*/
 
-/*
-fun main(args: Array<String>) = runBlocking {
+/*fun main(args: Array<String>) = runBlocking {
 	launch {
 		delay(1000)
 		println("World!")
@@ -47,7 +50,6 @@ private suspend fun doWorld() {
 	println("World!")
 }*/
 
-/*
 fun main(args: Array<String>) = runBlocking {
 	val jobs = List(100_000) {
 		launch {
@@ -57,7 +59,7 @@ fun main(args: Array<String>) = runBlocking {
 	}
 
 	jobs.forEach { it.join() }
-}*/
+}
 
 /*
 fun main(args: Array<String>) = runBlocking{
@@ -70,8 +72,7 @@ fun main(args: Array<String>) = runBlocking{
 	delay(1300)
 }*/
 
-/*
-fun main(args: Array<String>) {
+/*fun main(args: Array<String>) {
 	thread {
 		Thread.sleep(1000)
 		println("World!")
@@ -80,8 +81,7 @@ fun main(args: Array<String>) {
 	Thread.sleep(2000)
 }*/
 
-/*
-fun main(args: Array<String>) {
+/*fun main(args: Array<String>) {
 	val computation = thread {
 		Thread.sleep(1000)
 		println("World!")
@@ -101,8 +101,7 @@ fun main(args: Array<String>) {
 	threads.forEach(Thread::join)
 }*/
 
-/*
-fun main(args: Array<String>) = awaitEnter{
+/*fun main(args: Array<String>) = awaitEnter{
 	pauseUntilEnter()
 	val pool = Executors.newFixedThreadPool(1024)
 	repeat(10000){

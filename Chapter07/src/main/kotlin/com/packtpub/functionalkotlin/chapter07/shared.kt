@@ -49,17 +49,16 @@ fun counterActor(start:Int) = actor<CounterMsg> {
 	}
 }
 
-/*
 fun main(args: Array<String>) = runBlocking<Unit> {
-	val counter = counterActor()
-	massiveRun(CommonPool){
+	val counter = counterActor(0)
+	massiveRun{
 		counter.send(IncCounter)
 	}
 	val response = CompletableDeferred<Int>()
 	counter.send(GetCounter(response))
 	log("Counter = ${response.await()}")
 	counter.close()
-}*/
+}
 
 
 suspend fun repeatInParallel(times: Int, block: suspend () -> Unit) {
@@ -129,7 +128,7 @@ suspend fun repeatInParallel(times: Int, block: suspend () -> Unit) {
 	println("time = $time")
 }*/
 
-fun main(args: Array<String>) = runBlocking {
+/*fun main(args: Array<String>) = runBlocking {
 	val counterActor = counterActor(0)
 
 	val time = measureTimeMillis {
@@ -142,7 +141,7 @@ fun main(args: Array<String>) = runBlocking {
 	counterActor.send(GetCounter(counter))
 	println("counter = ${counter.await()}")
 	println("time = $time")
-}
+}*/
 
 
 

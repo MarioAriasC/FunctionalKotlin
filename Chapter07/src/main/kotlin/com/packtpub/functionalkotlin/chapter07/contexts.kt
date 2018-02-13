@@ -1,6 +1,7 @@
 package com.packtpub.functionalkotlin.chapter07
 
-/*
+import kotlinx.coroutines.experimental.*
+
 fun main(args: Array<String>) = runBlocking {
 	println("run blocking coroutineContext = $coroutineContext")
 	println("coroutineContext[Job] = ${coroutineContext[Job]}")
@@ -38,7 +39,7 @@ fun main(args: Array<String>) = runBlocking {
 		println("job = $job")
 		job.join()
 	}
-}*/
+}
 
 
 /*fun main(args: Array<String>) = runBlocking {

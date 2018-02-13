@@ -51,6 +51,8 @@ fun main(args: Array<String>) {
 
 	transform(1, 2, 3, 4) { i -> i.toString() }
 
+    //emit(1){i -> println(i)} // Compilation error
+
 	emit(1, ::println, { i -> println(i * 2) })
 
 	paramAfterVararg(68, "Abel", "Barbara", "Carl", "Diane", roomTemperature = 18.0)
