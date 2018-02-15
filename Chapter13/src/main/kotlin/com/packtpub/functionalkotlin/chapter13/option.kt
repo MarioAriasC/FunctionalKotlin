@@ -146,7 +146,7 @@ fun comprehensionDivision(a: Int, b: Int, den: Int): Option<Pair<Int, Int>> {
 		// start continuation 1
 			val bDiv: Int = optionDivide(b, den).bind()
 		    //start continuation 2
-				yields(aDiv to bDiv)
+				aDiv to bDiv
 			//end continuation 2
 		// end continuation 1
 	}.ev()

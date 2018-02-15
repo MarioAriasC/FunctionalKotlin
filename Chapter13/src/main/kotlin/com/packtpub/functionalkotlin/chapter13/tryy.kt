@@ -5,7 +5,7 @@ import arrow.core.toT
 import arrow.data.*
 import arrow.data.Try.Success
 import arrow.typeclasses.binding
-import arrow.typeclasses.bindingE
+import arrow.typeclasses.bindingCatch
 import java.lang.IllegalArgumentException
 import java.util.*
 
@@ -42,26 +42,26 @@ import java.util.*
 }*/
 
 
-/*fun main(args: Array<String>) {
+fun main(args: Array<String>) {
 	val totalPrice = Try.monad().binding {
 		val fooPrice = Try { OrderService.getOrder("foo")}.map { order -> order.price }.bind()
 		val bar = Try { OrderService.getOrder("bar") }.bind()
-		yields(fooPrice + bar.price)
+		fooPrice + bar.price
 
 	}.ev()
 
 	println(totalPrice.getOrDefault { -1 })
-}*/
+}
 
-fun main(args: Array<String>) {
-	val totalPrice = Try.monadError().bindingE {
+/*fun main(args: Array<String>) {
+	val totalPrice = Try.monadError().bindingCatch{
 		val fooPrice = OrderService.getOrder("foo").price
 		val bar = OrderService.getOrder("bar")
-		yields(fooPrice + bar.price)
+		fooPrice + bar.price
 	}.ev()
 //
 	println(totalPrice.getOrDefault { -1 })
-}
+}*/
 
 data class Order(val serial: String, val price: Double)
 
@@ -110,16 +110,16 @@ fun comprehensionTryDivision(a: Int, b: Int, den: Int): Try<Tuple2<Int, Int>> {
 	return Try.monad().binding {
 		val aDiv = tryDivide(a, den).bind()
 		val bDiv = tryDivide(b, den).bind()
-		yields(aDiv toT bDiv)
+		aDiv toT bDiv
 	}.ev()
 }
 
 
 fun monadErrorTryDivision(a: Int, b: Int, den: Int): Try<Tuple2<Int, Int>> {
-	return Try.monadError().bindingE {
+	return Try.monadError().bindingCatch {
 		val aDiv = divide(a, den)!!
 		val bDiv = divide(b, den)!!
-		yields(aDiv toT bDiv)
+		aDiv toT bDiv
 	}.ev()
 }
 

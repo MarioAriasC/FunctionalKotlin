@@ -43,7 +43,7 @@ fun calculatePrice(threshold: Double, discount: Double) = State().monad<PriceLog
     addVat().bind() //Unit
     applyDiscount(threshold, discount).bind() //Unit
     val price: Double = finalPrice().bind()
-    yields(price)
+    price
 }.ev()
 
 
